@@ -2,7 +2,7 @@
 """Square class definition"""
 
 
-class square:
+class Square:
     """A square
 
     Attributes:
