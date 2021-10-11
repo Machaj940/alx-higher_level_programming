@@ -16,7 +16,7 @@ class BaseGeometry:
             raise ValueError("{:s} must be greater than 0".format(name))
 
 
-class Rectangle(BaseGeometry.py):
+class Rectangle(BaseGeometry):
     '''A rectangle'''
     def __init__(self, width, height):
         '''instantiation of the rectangle'''
