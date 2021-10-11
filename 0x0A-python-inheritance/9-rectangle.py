@@ -28,6 +28,7 @@ class Rectangle(BaseGeometry.py):
     def area(self):
         '''returns the area of the rectangle'''
         return self.__width * self.__height
+
     def __str__(self):
         '''informal string representation of the rectangle'''
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
