@@ -4,6 +4,6 @@
 '''
 
 
-def class_to_join(obj):
+def class_to_json(obj):
     '''returns the simple dictionary description'''
     return obj.__dict__
