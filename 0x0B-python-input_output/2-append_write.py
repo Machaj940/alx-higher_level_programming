@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-'''Function that appends a string to a textfile and returns no. of chars written
-'''
+'''Append a string to a textfile and returns no. of chars written'''
 
 
 def append_write(filename="", text=""):
