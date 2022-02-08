@@ -13,9 +13,19 @@ Checking addition with floats:
 	 >>> add_integer(30.5, 10.4)
 	 40
 
+Checking addition of int and float:
+	 >>> add_integer(30.0, 5)
+	 35
+	 >>> add_integer(5, 30.0)
+	 35
+
 Checking addition with negative numbers:
 	 >>> add_integer(10, -3)
 	 7
+
+Checking the type
+	 >>> type(add_integer(2.0, 1))
+	 <class 'int'>
 
 Checking addition with a as string:
 	 >>> add_integer('aaa', 20)
@@ -28,3 +38,15 @@ Checking addition with b as string:
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: b must be an integer
+
+Addition using 1 value as parameter:
+	 >>> add_integer(3)
+    	 Traceback (most recent call last):
+    	 ...
+	 TypeError: add_integer() missing 1 required positional argument: 'b'
+
+Addition using no values as parameters:
+	 >>> add_integer()
+	 Traceback (most recent call last):
+    	 ...
+	 TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
