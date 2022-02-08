@@ -16,9 +16,13 @@ Checking addition with floats:
 Checking addition of int and float:
 	 >>> add_integer(30.0, 5)
 	 35
+	 >>> add_integer(5, 30.0)
+	 35
 
 Checking addition with negative numbers:
 	 >>> add_integer(10, -3)
+	 7
+	 >>> add_integer(-3, 10)
 	 7
 
 Checking addition with a as string:
