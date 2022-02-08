@@ -37,12 +37,14 @@ Checking addition with b as string:
 	 ...
 	 TypeError: b must be an integer
 
-Checking addition using 1 value as parameter:
+Checking addition with 1 value passed:
 	 >>> add_integer(3)
-	 101
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: add_integer() missing 1 required positional argument: 'b'
 
-Checking addition using no arguments:
+Checking addition with no values passed:
 	 >>> add_integer()
 	 Traceback (most recent call last):
-    	 ...
+	 ...
 	 TypeError: add_integer() missing 1 required positional argument: 'a'
