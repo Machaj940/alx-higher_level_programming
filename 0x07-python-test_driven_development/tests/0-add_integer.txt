@@ -41,10 +41,4 @@ Checking addition with b as string:
 
 Addition using 1 value as parameter:
 	 >>> add_integer(3)
-    	 101
-
-Addition using no values as parameters:
-	 >>> add_integer()
-	 Traceback (most recent call last):
-    	 ...
-	 TypeError: add_integer() missing 1 required positional argument: 'a'
+	 101
