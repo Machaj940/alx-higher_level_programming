@@ -6,6 +6,13 @@ Importing the function from the module:
 	  >>> print_square = __import__('4-print_square').print_square
 
 Checking if size is an int:
+	 >>> print_square(4)
+	 ####
+	 ####
+	 ####
+	 ####
+
+Checking if size is not an int:
 	 >>> print_square("12")
 	 Traceback (most recent call last):
 	 ...
