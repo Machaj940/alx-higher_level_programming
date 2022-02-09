@@ -25,5 +25,6 @@ Checking if size is a float greater than zero:
 
 Checking if size is less than zero:
 	 >>> print_square(-4)
+	 Traceback (most recent call last):
 	 ...
 	 ValueError: size must be >= 0
