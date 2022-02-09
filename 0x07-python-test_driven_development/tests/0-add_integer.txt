@@ -56,3 +56,15 @@ Check addition if both are not integers:
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: a must be an integer
+
+Checking some special floats:
+	 >>> add_integer(float('nan'), 3)
+	 Traceback (most recent call last):
+    	 ...
+	 ValueError: cannot convert float NaN to integer
+
+Checking another float:
+	 >>> add_integer(float("inf"), 3)
+	 Traceback (most recent call last):
+    	 ...
+	 OverflowError: cannot convert float infinity to integer
