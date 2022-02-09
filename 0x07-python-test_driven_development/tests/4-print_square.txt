@@ -35,3 +35,9 @@ Checking if size is less than zero:
 	 Traceback (most recent call last):
 	 ...
 	 ValueError: size must be >= 0
+
+Checking if printing with no parameter:
+	 >>> print_square()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: print_square() missing 1 required positional argument: 'size'
