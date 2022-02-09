@@ -24,6 +24,8 @@ Checking addition with negative numbers:
 	 7
 	 >>> add_integer(-3, 10)
 	 7
+	 >>> add_integer(-3, -10)
+	 -13
 
 Checking addition with a as string:
 	 >>> add_integer('aaa', 20)
