@@ -51,7 +51,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    
     def __lt__(self, other):
         '''
             less than <
