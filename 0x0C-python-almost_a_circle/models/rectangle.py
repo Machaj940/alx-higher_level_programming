@@ -2,7 +2,7 @@
 '''A Rectangle class'''
 
 
-from models.base import base
+Base = __import__('base').Base
 
 
 class Rectangle(Base):
