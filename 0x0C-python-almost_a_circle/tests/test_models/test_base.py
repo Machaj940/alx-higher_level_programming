@@ -3,7 +3,7 @@
 """
 import unittest
 from models import base
-
+Base = base.Base
 
 class Testbase(unittest.TestCase):
 
