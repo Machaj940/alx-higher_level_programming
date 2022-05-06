@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
 
-const num = process.argv[2];
+let num = process.argv[2];
 
 if (isNaN(num)) {
   console.log('Missing size');
