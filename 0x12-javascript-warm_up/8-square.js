@@ -9,6 +9,6 @@ if (isNaN(num)) {
     for (let j = 0; j < num; j++) {
       row += 'X';
     }
-    console.log(row + ' ');
+    console.log(row);
   }
 }
