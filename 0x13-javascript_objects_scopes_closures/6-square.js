@@ -7,11 +7,11 @@ class Square extends Sq {
       c = 'X';
     }
     for (let i = 0; i < this.height; i++) {
-      let myRow = '';
+      let Row = '';
       for (let j = 0; j < this.width; j++) {
-        myRow += c;
+        Row += c;
       }
-      console.log(myRow);
+      console.log(Row);
     }
   }
 }
