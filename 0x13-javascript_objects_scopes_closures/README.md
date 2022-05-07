@@ -1,0 +1,1 @@
+Contains code for Javascript objects, scopes and closures
