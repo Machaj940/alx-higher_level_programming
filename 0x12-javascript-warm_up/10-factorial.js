@@ -10,5 +10,5 @@ if (isNaN(process.argv[2])) {
   for (let i = 1; i <= process.argv[2]; i++) {
     fact *= i;
   }
-  console.log(fact);
+    console.log(fact);
 }
