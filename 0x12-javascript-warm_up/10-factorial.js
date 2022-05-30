@@ -1,14 +1,13 @@
 #!/usr/bin/node
 const process = require('process');
 
-if (isNaN(process.argv[2])) {
-  console.log(1);
-} else if (process.argv[2] === 0) {
-  console.log(1);
-} else {
-  let fact = 1;
-  for (let i = 1; i <= process.argv[2]; i++) {
-    fact *= i;
+
+function factorial(x) {
+  if (isNaN(x) || x === 0 || x === 1) {
+    return 1;
+  } else {
+    return x * factorial(x - 1);
   }
-    console.log(fact);
 }
+
+console.log(factorial(process.argv[2]));
