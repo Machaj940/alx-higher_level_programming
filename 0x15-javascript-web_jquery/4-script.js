@@ -1,5 +1,5 @@
 $(function () {
-  $("#toggle_header").click(function(){
-    $("header").toggleClass("green red");
+  $('#toggle_header').click(function () {
+    $('header').toggleClass('green red');
   });
 });
