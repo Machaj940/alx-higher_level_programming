@@ -3,5 +3,4 @@
 def element_at(my_list, idx):
     if idx < 0 or idx > len(my_list):
         return None
-    elem_at_idx = my_list.pop(idx)
-    return elem_at_idx
+    return my_list[idx]
