@@ -4,6 +4,7 @@
 
 def text_indentation(text):
     """the function"""
+
     if type(text) is not str:
         raise TypeError("text must be a string")
     for i in text:
