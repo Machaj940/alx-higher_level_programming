@@ -2,12 +2,8 @@
 '''Contains class MyList'''
 
 
-Class MyList(list):
-    '''a subclass of list'''
-    def __init__(self):
-        '''initializes the object'''
-        super().__init__()
-
+class MyList(list):
+    '''the class'''
     def print_sorted(self):
         '''prints the sorted list'''
         print(sorted(self))
