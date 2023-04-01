@@ -30,3 +30,13 @@ Check sorted list with one item:
       >>> my_list.append(10)
       >>> my_list.print_sorted()
       [10]
+
+Check sorted list with same number:
+      >>> my_list = MyList()
+      >>> my_list.append(1)
+      >>> my_list.append(1)
+      >>> my_list.append(1)
+      >>> my_list.append(1)
+      >>> my_list.append(1)
+      >>> my_list.print_sorted()
+      [1, 1, 1, 1, 1]
