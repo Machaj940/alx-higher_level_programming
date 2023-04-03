@@ -34,13 +34,13 @@ class Base:
                   encoding="utf-8") as f:
             f.write(dictlist_to_json)
 
-            #OR
-            #json.dump(listofDictionaries, f)
-            #you do not need to do the dictlist_to_json... step like above
+#            OR
+#            json.dump(listofDictionaries, f)
+#            you do not need to do the dictlist_to_json... step like above
 
     @staticmethod
     def from_json_string(json_string):
         """convert json string to list"""
         if json_string is None:
-            json_string = []
+            return list()
         return json.loads(json_string)
