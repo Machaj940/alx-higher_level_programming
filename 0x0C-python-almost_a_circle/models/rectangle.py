@@ -68,10 +68,18 @@ class Rectangle(Base):
 
     def display(self):
         """print the rectangle with #"""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-            print()
+        #for i in range(self.__height):
+            #for j in range(self.__width):
+                #print("#", end="")
+            #print()
+
+        rectangle = ""
+
+        print("\n" * self.y, end="")
+
+        for i in range(self.height):
+            rectangle += (" " * self.x) + ("#" * self.width) + "\n"
+        print(rectangle, end="")
 
     def __str__(self):
         """Print the instance"""
