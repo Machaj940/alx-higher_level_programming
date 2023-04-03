@@ -88,8 +88,13 @@ class Rectangle(Base):
             f"{self.width}/{self.height}"
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
+        if len(args) == 0:
+            for key, val in kwargs.items():
+                self.__setattr__(key, val)
+            return
+
         try:
             self.id = args[0]
             self.width = args[1]
