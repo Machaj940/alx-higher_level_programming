@@ -3,7 +3,7 @@ const process = require('process');
 
 const arg = Number(process.argv[2]);
 
-if (!isNaN(arg)) {
+if (arg) {
   for (let i = 0; i < arg; i++) {
     let row = '';
     for (let j = 0; j < arg; j++) {
