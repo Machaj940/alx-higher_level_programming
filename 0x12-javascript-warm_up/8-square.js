@@ -1,14 +1,16 @@
 #!/usr/bin/node
-const num = process.argv[2];
+const process = require('process');
 
-if (isNaN(num)) {
-  console.log('Missing size');
-} else {
-  for (let i = 0; i < num; i++) {
-    let row = '';
-    for (let j = 0; j < num; j++) {
-      row += 'X';
+const arg = Number(process.argv[2]);
+
+if (arg) {
+    for (let i = 0; i < arg; i++) {
+        let row = '';
+        for (let j = 0; j < arg; j++) {
+            row += 'X';
+        }
+        console.log(row + ' ');
     }
-    console.log(row);
-  }
+} else {
+  console.log('Missing size');
 }
