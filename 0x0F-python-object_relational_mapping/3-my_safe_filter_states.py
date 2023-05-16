@@ -16,7 +16,5 @@ if __name__ == "__main__":
                      ORDER BY states.id ASC""", {'name': argv[4]})
     query_rows = cur.fetchall()
     if query_rows is not None:
-        for row in rows:
+        for row in query_rows:
             print(row)
-    cur.close()
-    conn.close()
