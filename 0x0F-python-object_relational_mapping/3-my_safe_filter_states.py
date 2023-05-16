@@ -12,7 +12,7 @@ if __name__ == "__main__":
                            db=argv[3], port=3306, charset="utf8")
     '''make a connection to the database that you wish to use'''
     with conn.cursor() as cur:
-        cur.execute("""SELECT * FROM states WHERE name LIKE %(name)s \
+        cur.execute("""SELECT * FROM states WHERE name LIKE BINARY %(name)s \
                      ORDER BY states.id ASC""", {'name': argv[4]})
     query_rows = cur.fetchall()
     if query_rows is not None:
