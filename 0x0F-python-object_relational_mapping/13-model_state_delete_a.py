@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
     session = Session(engine)
 
-    session.query(State).filter(State.name.like('%a%')).delete()
+    for instance in session.query(State).filter(State.name.contains('a')):
+        session.delete(instance)
 
     session.commit()
 
