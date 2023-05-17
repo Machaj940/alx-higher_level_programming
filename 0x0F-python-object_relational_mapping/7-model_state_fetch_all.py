@@ -5,9 +5,8 @@
 
 
 from model_state import Base, State
-import sqlalchemy
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Session
 from sys import argv
 
 
