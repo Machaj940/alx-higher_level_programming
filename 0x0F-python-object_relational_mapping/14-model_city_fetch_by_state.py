@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-'''Write a script that lists all State objects from the database hbtn_0e_6_usa
-   You must use the module SQLAlchemy
+'''Write a script that joins 2 tables using SQLAlchemy
 '''
 
 
