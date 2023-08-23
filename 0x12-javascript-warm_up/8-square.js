@@ -1,16 +1,15 @@
 #!/usr/bin/node
+
 const process = require('process');
 
-const arg = Number(process.argv[2]);
-
-if (arg) {
-  for (let i = 0; i < arg; i++) {
-    let row = '';
-    for (let j = 0; j < arg; j++) {
-      row += 'X';
+if (typeof parseInt(process.argv[2], 10) === "number") {
+    for (let i = 0; i < parseInt(process.argv[2]); i++) {
+	let row = ''
+	for (let j = 0; j < parseInt(process.argv[2]); j++) {
+	    row += "X";
+	}
+	console.log(row + " ");
     }
-    console.log(row + ' ');
-  }
 } else {
-  console.log('Missing size');
-}
+    console.log("Missing size");
+};
