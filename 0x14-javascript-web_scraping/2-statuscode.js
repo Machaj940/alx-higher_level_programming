@@ -11,3 +11,10 @@ request(url, function (error, response, body) {
     console.log('code:', response && response.statusCode);
   }
 });
+
+
+/* OR
+request.get(url).on('response', function(response) {
+    console.log("code: " + response.statusCode);
+});
+*/
